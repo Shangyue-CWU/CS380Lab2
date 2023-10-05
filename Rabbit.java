@@ -3,6 +3,7 @@
 * @author Devlin Hamill
 */
 
+
 public class Rabbit extends Animal{
 
 
