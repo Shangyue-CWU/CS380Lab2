@@ -28,7 +28,7 @@ public class Peacock extends Animal {
 	 */
 	public void sound(){
 		
-		System.out.println(this.name + "says squakkkk! May-Aweee!");
+		System.out.println(this.name + " says squakkkk! May-Aweee!");
 	}
 	    
 	/**
@@ -37,7 +37,7 @@ public class Peacock extends Animal {
 	 */
 	public void play(){
 		
-		System.out.println(this.name + "likes to show their beautiful feathers!");
+		System.out.println(this.name + " likes to show their beautiful feathers!");
 	}
 	     
 	/**
