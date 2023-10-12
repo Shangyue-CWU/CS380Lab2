@@ -24,7 +24,7 @@ public class Peacock extends Animal {
 	}
 	   
 	/** 
-	 * 
+	 * Method that prints what this animal sounds like
 	 */
 	public void sound(){
 		
@@ -32,8 +32,7 @@ public class Peacock extends Animal {
 	}
 	    
 	/**
-	 * Abstract method that should represent a specific  activity
-	 * that an animal does for fun.
+	 * Method that prints what this animal does for fun
 	 */
 	public void play(){
 		
@@ -41,7 +40,7 @@ public class Peacock extends Animal {
 	}
 	     
 	/**
-	 * A  method that prints out that the animal is eating food.
+	 * Method that prints out what this animal eats
 	 */
 	public void eat(){
 	      System.out.println(this.name + " eats plants, fruit, and insects.");
