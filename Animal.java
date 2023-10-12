@@ -17,7 +17,7 @@ public class Bobcat extends Animal {
     */
    @Override
    public void sound() {
-      System.out.println(this.name + " makes a growling sound.");
+      System.out.println(this.name + " makes a growling sound." + " ARRRRRRRRRRRRRRRRRRRRRRRRRRRR");
    }
 
    /**
@@ -34,6 +34,7 @@ public class Bobcat extends Animal {
     * @param args Command-line arguments (not used in this example).
     */
    public static void main(String[] args) {
+      System.out.println();
       Bobcat bobcat = new Bobcat("Bobby");
       bobcat.sound();
       bobcat.play();
