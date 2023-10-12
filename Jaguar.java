@@ -16,6 +16,7 @@ public class Jaguar extends Animal {
     */
    public Jaguar(String name) {
       super(name);
+      this.name = name;
    }
    
    
@@ -41,4 +42,14 @@ public class Jaguar extends Animal {
    public void eat() {
       System.out.println(this.name + " eats a deer.");
    }  
+
+   public static void main(String[] args) {
+      Jaguar jaguar1 = new Jaguar("Steve");
+      
+      jaguar1.sound();
+      jaguar1.play();
+      jaguar1.eat();
+   }
 }
+
+
