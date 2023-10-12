@@ -1,43 +1,45 @@
 /**
- * This class represents a Bobcat, a specific type of animal that extends the abstract class Animal.
+ *Abstract class Animal. Any class that extends this class
+ *will have to override all of the abstract methods.
+ *@author Dmytro Dovhalets.
  */
-public class Bobcat extends Animal {
+public abstract class Animal{
+
 
    /**
-    * Constructor to create a Bobcat object with a specified name.
-    *
-    * @param name The name of the Bobcat.
+    * A field which stores the animals name.
     */
-   public Bobcat(String name) {
-      super(name);
+   protected String name;
+
+
+   /**
+    * A constructor that takes in a name.
+    *@param name Name of the animal.
+    */
+   public Animal(String name){
+      this.name = name;
    }
 
-   /**
-    * This method prints out the sound that a Bobcat makes.
-    */
-   @Override
-   public void sound() {
-      System.out.println(this.name + " makes a growling sound." + " ARRRRRRRRRRRRRRRRRRRRRRRRRRRR");
-   }
 
    /**
-    * This method represents the activity of a Bobcat while playing.
+    *Abstract method that should represent a specific sound
+    * an animal makes.
     */
-   @Override
-   public void play() {
-      System.out.println(this.name + " hunts for prey while playing.");
-   }
+   public abstract void sound();
+
 
    /**
-    * Main method for testing the Bobcat class.
-    *
-    * @param args Command-line arguments (not used in this example).
+    * Abstract method that should represent a specific  activity
+    * that an animal does for fun.
     */
-   public static void main(String[] args) {
-      System.out.println();
-      Bobcat bobcat = new Bobcat("Bobby");
-      bobcat.sound();
-      bobcat.play();
-      bobcat.eat();
+   public abstract void play();
+
+
+   /**
+    * A  method that prints out that the animal is eating food.
+    */
+   public void eat(){
+      System.out.println(this.name + " eats some food.");
    }
 }
+
